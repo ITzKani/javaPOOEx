@@ -3,7 +3,7 @@ import java.text.DecimalFormat;
 class ConversionTemp{
 
     private double c, f;
-    DecimalFormat f1 = new DecimalFormat("#.00");
+    DecimalFormat f1 = new DecimalFormat("#0.00");
 
     public double conversion(){
 

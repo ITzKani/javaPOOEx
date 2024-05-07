@@ -7,9 +7,8 @@ class MainSecondsByDay{
         System.out.print("Ingresa la cantidad de dias: ");
         int dias = fn.nextInt();
 
-        SecondsByDay s1 = new SecondsByDay();
-
-        s1.setDias(dias);
+        SecondsByDay s1 = new SecondsByDay(dias);
+        
         s1.convertirDiasASeg();
         s1.mostrarRes();
 

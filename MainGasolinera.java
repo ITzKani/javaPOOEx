@@ -6,9 +6,8 @@ class MainGasolinera{
         System.out.print("Registra la gasolina en galones: ");
         double gasGal = fn.nextDouble();
 
-        Gasolinera g1 = new Gasolinera();
+        Gasolinera g1 = new Gasolinera(gasGal);
 
-        g1.gasGal = gasGal;
         g1.conversionGaLit();
         g1.mostrarRes();
 

@@ -14,10 +14,8 @@ class MainAreaTriangulo{
         System.out.print("Ingresa el valor de la altura de tu triangulo: ");
         altura = fn.nextDouble();
 
-        AreaTriangulo a1 = new AreaTriangulo();
+        AreaTriangulo a1 = new AreaTriangulo(base, altura);
 
-        a1.setBase(base);
-        a1.setAltura(altura);
         a1.sacarArea();
         a1.mostrarRes();
         System.out.println(a1.toString());

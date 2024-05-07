@@ -7,9 +7,7 @@ class MainConversionTemp{
         System.out.print("Temperatura en grados C°: ");
         double c = fn.nextDouble();
 
-        ConversionTemp cv = new ConversionTemp();
-
-        cv.setC(c);
+        ConversionTemp cv = new ConversionTemp(c);
 
         System.out.println("-----------------------------");
         cv.conversion();

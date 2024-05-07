@@ -3,8 +3,28 @@ import java.text.DecimalFormat;
 class ConversionTemp{
 
     private double c, f;
-    DecimalFormat f1 = new DecimalFormat("#0.00");
+    DecimalFormat f1 = new DecimalFormat("#0.0");
 
+    public ConversionTemp(double c){
+        this.c = c;
+    }
+
+    public double getC() {
+        return c;
+    }
+    
+    public void setC(double c) {
+        this.c = c;
+    }
+    
+    public double getF() {
+        return f;
+    }
+    
+    public void setF(double f) {
+        this.f = f;
+    }
+    
     public double conversion(){
 
         f = (c * 9/5) + 32;
@@ -15,30 +35,13 @@ class ConversionTemp{
     public void mostrarRes(){
         
 
-        System.out.println("La temperatura en grados F° es: " + f1.format(f));
+        System.out.println("La temperatura en grados F° es: " + f1.format(getF()));
 
-    }
-
-    public double getC() {
-        return c;
-    }
-
-    public void setC(double c) {
-        this.c = c;
-    }
-
-    public double getF() {
-        return f;
-    }
-
-    public void setF(double f) {
-        this.f = f;
     }
 
     @Override
     public String toString() {
-        return "ConversionTemp [c=" + c + ", f=" + f1.format(f) + "]";
+        return "ConversionTemp [getC()=" + getC() + ", getF()=" + getF() + "]";
     }
-
     
 }
